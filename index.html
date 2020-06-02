@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Tablo Heuristics Evaluation</title>
 </head>
 <body>
@@ -10,35 +11,43 @@
     <p>Tablo is a DVR that connects to a digital TV antenna to record over the air HDTV.  To access what is recorded by the Tablo you go to <a href="my.tablotv.com">my.tablotv.com</a> which allows you to connect to a Tablo on your local network.</p>
     
     <h3>1. Visibility of System Status</h3>
-    </p> When you navigate to my.tablotv.com if there is already a Tablo on your network it will show it and allow you to connect.  When you click connect it shows the loading circle in the center with the word Connecting.  
+    <p> When you navigate to my.tablotv.com if there is already a Tablo on your network it will show it and allow you to connect.  When you click connect it shows the loading circle in the center with the word Connecting.  
     When you click on the menu button in the upper left it allows you to switch through the different options. When you click on a new menu item the label at the top switches to let you know it is in the process of loading what you asked for.</p>
-    
+    <p><img id="connect" src="TabloConnecting.png" alt="Connecting to Tablo screen"><img id="label" src="TabloRecordings.png" alt="Recordings section of Tablo web app. The word Recordings is circled at the top"></p>
+
     <h3>2. Match Between System and the Real World</h3>
     <p> The Live TV selection on the menu will take you to a list of channels that your antenna can pick up, and show you what will be on for the next 7-14 days depending on settings.  
-        From this screen you can click on a channel to start watching it live.</p>
+        This screen looks very similar to a TV Guide book.  From this screen you can click on a channel to start watching it live.</p>
+    <p><img id="guide" src="TabloLiveTV.png" alt="Live TV Section of Tablo web app"></p>
     
     <h3>3. User Control and Freedom</h3> 
-    <p>In the recordings tab when you click on the delete button it takes a few seconds for the prompt to come up. The prompt asks for a confirmation on what you would like to delete. </p>
+    <p>In the recordings tab when you click on the delete button it takes a few seconds for the prompt to come up. The prompt asks for a confirmation on what you would like to delete.</p>
+    <p><img id="deleteMany" src="TabloDeleteMany.png" alt="The options for deleting recordings are delete all or delete watched"></p>
     
     <h3>4. Consistency and Standards</h3>
-    <p>Any time a button could do more then one thing it is a drop down such as the delete button.  It can be used to either delete watched recordings or all recordings.</p>
+    <p>Any time a button could do more then one thing it is a drop down such as the delete button.  It can be used to either delete watched recordings or all recordings.  The example image for this is the same as the image for number 3</p>
     
     <h3>5. Error Prevention</h3>
     <p>To delete a recording you must click on the button labeled "delete recording", this button is outlined in a bright red to alert the user that it is there.</p>
+    <p><img id="deleteone" src="TabloDeleteRecording.png" alt="Highlights the fact that the delete recordings button is red"></p>
 
     <h3>6. Recognition rather than Recall</h3> 
-    <p>There are no multistep dialoge boxes within the Tablo web app.  Everything that you need for any given dialoge option is shown on the screen when the box is brought up.</p>
+    <p>There are no multistep dialoge boxes within the Tablo web app.  Everything that you need for any given dialoge option is shown on the screen when a dialoge box is brought up.</p>
 
     <h3>7. Flexibility and Efficiency of Use</h3> 
     <p>Since Tablo has been released there have been many things done to speed up the web app.  There used to be a syncing screen that came up everytime the app was opened, now it only comes up the first time a device is connected.</p>
+    <p><img id="sync" src="TabloSyncing.jpg" alt="Shows the Tablo syncing with the device"></p>
     
     <h3>8. Aesthetic and Minimalist Design</h3>
     <p>Every aspect of the Tablo seems to have been designed with the idea of minimalism in mind. There is very little text on the screen at a time and it is filled with pictures instead.</p>
 
     <h3>9. Help Users Recognize, Diagnose, and Recover from Errors</h3>
-    <p>When an error message is displayed it uses plain english to explain why there was an error.</p>
+    <p>When an error message is displayed it uses plain english to explain why there was an error.  The message below is saying that the tuner that was being used to watch the channel has been assigned to a different channel.</p>
+    <p><img id="error" src="TabloErrorMessage.jpg" alt="Displays the error message discussed in the paragraph above"></p>
 
     <h3>10. Help and Documentation</h3>
     <p>There is a support link in the settings tab of the web app, this support link takes you to the Tablo support page where you can ask questions and find the answer to your question.</p>
+    <p><img id="support" src="TabloSupport.png" alt="shows a link to the Tablo support"></p>
+
 </body>
 </html>
